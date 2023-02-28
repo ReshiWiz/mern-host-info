@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 8000;
 
 // static
 app.use(
-  express.static(path.join(__dirname, "./firebase-app/build/index.html"))
+  express.static(path.join(__dirname, "./firebase-app/"))
 );
 
 app.get("*", (req, res) => {
