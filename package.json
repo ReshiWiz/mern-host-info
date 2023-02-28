@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "concurrently \" npm start\" \" npm run firebase\""
+    "dev" : "index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jeeva",
   "license": "ISC",
