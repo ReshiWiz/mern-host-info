@@ -18,11 +18,13 @@ app.use("/", router);
 const PORT = process.env.PORT || 8000;
 
 // static
-app.use(express.static(path.join(__dirname, "../server/firebase-app/build")));
+app.use(
+  express.static(path.join(__dirname, "./firebase-app/build/index.html"))
+);
 
 app.get("*", (req, res) => {
   res.sendFile(
-    path.join(__dirname, "../server/firebase-app/build/index.html"),
+    path.join(__dirname, "./firebase-app/build/index.html"),
     function (error) {
       res.status(500).send(error);
     }
